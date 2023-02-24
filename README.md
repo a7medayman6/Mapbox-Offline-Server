@@ -31,6 +31,9 @@ MapBox Offline Server is a NodeJS API for caching then serving MapBox tiles for 
 git clone https://github.com/a7medayman6/Mapbox-Offline-Server
 cd Mapbox-Offline-Server
 ```
+
+- Set the configuration with your Mapbox access token, username, and styles strings.
+- 
 ### Using NodeJS
 
 ```bash
