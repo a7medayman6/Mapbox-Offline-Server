@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  mapbox-cache-server:
+    image: mapbox-cache-server
+    restart: always
+    build:
+      context: ./mapbox-cache-server
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./mapbox-cache-server/tiles/:/usr/src/app/tiles/
+      - ./mapbox-cache-server/config/:/usr/src/app/config/
+      - ./mapbox-cache-server/tiles.sqlite:/usr/src/app/tiles.sqlite
+    ports:
+      - 3000:3000
